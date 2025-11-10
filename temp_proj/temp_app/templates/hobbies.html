@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Hobbies{% endblock %}
+
+{% block content %}
+  <section class="card">
+    <h2>Hobbies</h2>
+    <ul>
+      {% for hobby in hobbies %}
+        <li>{{ hobby }}</li>
+      {% empty %}
+        <li>No hobbies provided.</li>
+      {% endfor %}
+    </ul>
+
+    <p>
+      {% if grade == 12 %}
+        <strong>applicant</strong>
+      {% else %}
+        <strong>future applicant</strong>
+      {% endif %}
+    </p>
+  </section>
+{% endblock %}

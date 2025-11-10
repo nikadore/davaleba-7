@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Personal Info{% endblock %}
+
+{% block content %}
+  <section class="card">
+    <h2>Personal Information</h2>
+    <ul>
+      <li>First name: {{ first_name }}</li>
+      <li>Last name: {{ last_name }}</li>
+      <li>Age: {{ age }}</li>
+      <li>Height: {{ height }}</li>
+    </ul>
+  </section>
+{% endblock %}
